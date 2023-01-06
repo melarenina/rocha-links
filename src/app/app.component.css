@@ -1,109 +1,101 @@
-.parallax {
-  /* The image used */
-  background-image: url("../assets/fundo.jpg");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-  /* Full height */
-  height: 49em;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: 'Poppins', sans-serif;
 }
 
-.list-group-item {
-  display: flex;
-  justify-content: space-between;
+a {
+  text-decoration: none;
 }
 
-.card-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.img-fluid {
-  width: 44%;
-  height: 5vh !important;
-  margin-top: 1%;
-}
-
-.card-img,
-.card-img-bottom,
-.card-img-top {
-  flex-shrink: 0;
-  width: 79%;
-  margin: auto;
-  margin-top: 12%;
-}
-
-.contentContact {
-  background-color: #00000066;
-  box-shadow: 10px 5px 5px #00000054;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  height: -webkit-fill-available;
+.all {
   width: 100%;
-}
+  height: 100vh;
 
-/* Create four equal columns */
-.column {
-  flex: 25%;
+  background-image: url(../assets/blob-scene-haikei.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
   padding: 20px;
 }
 
-.logoAviva {
-  width: 12em;
-  margin-bottom: 33px;
+.container {
+    width: 100%;
+    height: auto;
+
+    
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(120, 122, 145, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-button {
-  width: 13em;
+.logoRocha,
+.titleRocha{
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  background-color: white;
-  color: black;
+  justify-content: center;
+
+  margin-top: 20px;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
-  .column {
-    flex: 50%;
-  }
+.logoRocha img{
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  box-shadow: -2px 10px 20px #acacac,
+      15px -15px 50px #ffffff9d;
 }
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
+.titleRocha img {
+  width: 250px;
+}
 
-  .parallax {
-    height: 66em;
-  }
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-  button {
-    width: 12em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+  margin: 0 auto;
 
-  .logoDuda {
-    width: 13em;
-  }
+}
 
-  .contentContact {
-    padding-left: 3em;
-  }
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 60px 0 20px 0;
+
+  gap: 20px;
+}
+
+.link {
+  color: #000;
+  background-color: #eee;
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 300;
+
+  width: 70vw;
+  padding: 20px;
+
+  transition: .3s;
+
+}
+
+.link:hover {
+  transform: scaleX(1.1);
 }
